@@ -12,6 +12,11 @@ $answer = $_GET['message'];
 $return = "0 buna bir cevabım yok açıkçası.";
 $found = false;
 
+if ($answer == '') {
+    echo $return;
+    return;
+}
+
 $db = new DatabaseManager();
 $answer = $db->prepareQuery($answer);
 
@@ -53,7 +58,7 @@ if (!$found) {
 
     $maxCount = 0;
     $maxCevap = 0;
-    foreach ($cevaplar as $cevap => $count) {
+    foreach ($cevapSayilari as $cevap => $count) {
         if ($cevap > 0) {
             if ($count > $maxCount || ($count === $maxCount && rand(0, 2) == 1)) {
                 $maxCevap = $cevap;
@@ -71,6 +76,7 @@ if (!$found) {
     }
 
 }
+
 
 if (!$found) {
     $tempSentence = $db->getRandCevaplanmamisSoru();
