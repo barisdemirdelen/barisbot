@@ -1,0 +1,14 @@
+[25-Oct-2011 10:08:57] PHP Warning:  fopen(debug.log) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/barisdem/public_html/bot/Logger.php on line 27
+[25-Oct-2011 10:08:57] PHP Warning:  file_get_contents(./debug.log) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/barisdem/public_html/bot/Logger.php on line 30
+[23-Apr-2015 13:02:14 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/barisdem/public_html/bot/eval.php on line 5
+[23-Apr-2015 13:02:55 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/barisdem/public_html/bot/eval.php on line 5
+[23-Apr-2015 13:03:44 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/barisdem/public_html/bot/eval.php on line 5
+[23-Apr-2015 13:03:50 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/barisdem/public_html/bot/eval.php on line 5
+[23-Apr-2015 13:15:34 America/New_York] PHP Parse error:  syntax error, unexpected '[' in /home/barisdem/public_html/bot/DatabaseManager.php on line 160
+[23-Apr-2015 13:18:12 America/New_York] PHP Parse error:  syntax error, unexpected '[' in /home/barisdem/public_html/bot/DatabaseManager.php on line 160
+[23-Apr-2015 15:55:53 America/New_York] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/barisdem/public_html/bot/eval.php on line 16
+[23-Apr-2015 15:55:55 America/New_York] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/barisdem/public_html/bot/eval.php on line 16
+[23-Apr-2015 15:56:33 America/New_York] PHP Parse error:  syntax error, unexpected '[', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/barisdem/public_html/bot/eval.php on line 16
+[23-Apr-2015 16:01:09 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/barisdem/public_html/bot/eval.php on line 33
+[24-Apr-2015 06:09:01 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/barisdem/public_html/bot/eval.php on line 38
+[24-Apr-2015 06:09:13 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/barisdem/public_html/bot/eval.php on line 38
