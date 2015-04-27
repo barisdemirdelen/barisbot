@@ -1,0 +1,70 @@
+
+.messages {
+    width: 640px;
+    margin: 20px auto;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.leftBubble, .rightBubble {
+    margin-top: 10px;
+    padding: 3px 5px 3px 5px;
+    max-width: 80%;
+    clear: both;
+}
+
+.leftBubble {
+    position: relative;
+    float: left;
+    margin-right: auto;
+    background: #C4FFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.leftBubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #C4FFFF;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-top: -15px;
+    left: -15px;
+    top: 50%;
+}
+
+.rightBubble {
+    float: right;
+    margin-left: auto;
+    text-align: right;
+    position: relative;
+    background: #88FF8D;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rightBubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent #88FF8D;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-top: -15px;
+    right: -15px;
+    top: 50%;
+}
+
+
+

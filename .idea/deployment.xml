@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ftp.barisdemirdelen.com">
-    <serverData>
-      <paths name="ftp.barisdemirdelen.com">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/bot" local="$PROJECT_DIR$" web="/public_html" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
-  </component>
+  <component name="PublishConfigData" serverName="ftp.barisdemirdelen.com" />
 </project>
