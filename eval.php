@@ -23,13 +23,20 @@ foreach ($words as $word) {
 }
 
 $maxCount = 0;
-$maxCevap = 0;
+$maxCevaps = array();
 foreach ($cevapSayilari as $cevap => $count) {
     if ($cevap > 0) {
-        if ($count > $maxCount || ($count === $maxCount && rand(0, 2) == 1)) {
-            $maxCevap = $cevap;
-            $maxCount = $count;
-
+        if ($count > $maxCount) {
+            $random = rand(0, 2);
+            if ($random < 2) {
+                $maxCevaps = array();
+            }
+        }
+        if ($count >= $maxCount || ($maxCount - $count == 1 && rand(0, 5) == 5)) {
+            $maxCevaps[] = $cevap;
+            if ($count > $maxCount) {
+                $maxCount = $count;
+            }
         }
     }
 }
@@ -38,8 +45,10 @@ $cevapCumleleri = array();
 foreach ($cevapSayilari as $cevap => $count) {
     $cevapCumleleri[$cevap] = $db->getCumleById($cevap);
 }
-echo json_encode($cevapCumleleri) . '<br/>';
-echo $db->getCumleById($maxCevap);
+echo json_encode($cevapSayilari) . '<br/><br/>';
+echo json_encode($cevapCumleleri) . '<br/><br/>';
+echo json_encode($maxCevaps) . '<br/><br/>';
+echo $db->getCumleById($maxCevaps[array_rand($maxCevaps)]);
 
 
 ?>
