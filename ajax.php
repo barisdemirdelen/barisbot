@@ -100,7 +100,7 @@ if (!$found) {
         $found = true;
     }
 }
-
+$return = stripslashes($return);
 echo $return;
 return;
 ?>

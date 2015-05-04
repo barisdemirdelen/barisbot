@@ -22,13 +22,13 @@ include_once 'DatabaseManager.php';
         </tr>
         <tr>
             <td> Son cümle:</td>
-            <td> <?php echo $db->getSonCumle(); ?></td>
+            <td> <?php echo stripslashes($db->getSonCumle()); ?></td>
             <td></td>
         </tr>
         <tr>
             <td> Öğrenilmiş son cevap:</td>
-            <td> <?php echo $db->getSonOgrenilmisSoru(); ?></td>
-            <td> <?php echo $db->getSonOgrenilmisCevap(); ?></td>
+            <td> <?php echo stripslashes($db->getSonOgrenilmisSoru()); ?></td>
+            <td> <?php echo stripslashes($db->getSonOgrenilmisCevap()); ?></td>
         </tr>
         <tr>
             <td> Son günlük:</td>

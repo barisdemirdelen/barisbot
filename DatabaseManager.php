@@ -34,6 +34,7 @@ class DatabaseManager
 
     public function insertCumle($cumle)
     {
+        $cumle = $this->prepareQuery($cumle);
         $id = 0;
         $stmt2 = mysqli_prepare($this->connection, "INSERT INTO cumleler VALUES (0,?)");
         if ($stmt2) {
@@ -47,6 +48,7 @@ class DatabaseManager
 
     public function getCumleId($cumle)
     {
+        $cumle = $this->prepareQuery($cumle);
         $id = 0;
         $stmt = mysqli_prepare($this->connection, "SELECT id FROM cumleler where cumle=?");
         if ($stmt) {
@@ -70,6 +72,7 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $cumle1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cumle1 = stripslashes($cumle1);
                 $cumle = $cumle1;
             }
             mysqli_stmt_close($stmt);
@@ -79,6 +82,7 @@ class DatabaseManager
 
     public function getKelimeLikeCount($kelime)
     {
+        $kelime = $this->prepareQuery($kelime);
         $this->logger->writeLine("getKelimeLikeCount gets: " . $kelime);
         $sayi = -1;
         $stmt = mysqli_prepare($this->connection, "SELECT COUNT(*) FROM cumleler WHERE cumle LIKE '%" . $kelime . "%'");
@@ -112,7 +116,7 @@ class DatabaseManager
 
     public function isCumlelerContainsCumle($cumle)
     {
-
+        $cumle = $this->prepareQuery($cumle);
         $contains = false;
         $stmt = mysqli_prepare($this->connection, "SELECT cumle FROM cumleler where cumle=?");
         if ($stmt) {
@@ -136,10 +140,12 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $id1, $cevap1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cevap1 = stripslashes($cevap1);
                 $cevap = $id1 . " " . $cevap1;
             }
             mysqli_stmt_close($stmt);
         }
+
         $this->logger->writeLine("getRandSoru returns: " . $cevap);
         return $cevap;
     }
@@ -154,6 +160,7 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $id1, $cevap1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cevap1 = stripslashes($cevap1);
                 $cevap = $id1 . " " . $cevap1;
             }
             mysqli_stmt_close($stmt);
@@ -162,35 +169,18 @@ class DatabaseManager
         return $cevap;
     }
 
-    public function getRandCevapOfYaklasikKelime($kelime)
-    {
-        $this->logger->writeLine("getRandCevapOfYaklasikKelime gets: " . $kelime);
-        $cevap = "";
-        $stmt = mysqli_prepare($this->connection, "SELECT id,cumle FROM cumleler WHERE id IN 
-                    (SELECT cevapid FROM verildi WHERE soruid IN (SELECT id FROM cumleler WHERE cumle LIKE '%" . $kelime . "%' AND cumleler.id IN 
-            ( SELECT soruid FROM verildi ))) ORDER BY RAND() LIMIT 1");
-        if ($stmt) {
-            mysqli_stmt_execute($stmt);
-            mysqli_stmt_bind_result($stmt, $id1, $cevap1);
-            if (mysqli_stmt_fetch($stmt)) {
-                $cevap = $id1 . " " . $cevap1;
-            }
-            mysqli_stmt_close($stmt);
-        }
-        $this->logger->writeLine("getRandCevapOfYaklasikKelime returns: " . $cevap);
-        return $cevap;
-    }
-
     public function getCevaplarOfKelime($kelime)
     {
+        $kelime = $this->prepareQuery($kelime);
         $this->logger->writeLine("getCevaplarOfKelime gets: " . $kelime);
         $cevaplar = array();
-        $stmt = mysqli_prepare($this->connection, "SELECT cevapid FROM verildi WHERE soruid IN (SELECT id FROM cumleler WHERE cumle = '" . $kelime . "' OR cumle LIKE '% " . $kelime . " %' AND cumle <> '')");
+        $stmt = mysqli_prepare($this->connection, "SELECT cevapid FROM verildi WHERE soruid IN (SELECT id FROM cumleler WHERE cumle LIKE '%" . $kelime . "%')");
         if ($stmt) {
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $cevap1);
             while (mysqli_stmt_fetch($stmt)) {
                 if ($cevap1 != 0) {
+                    $cevap1 = stripslashes($cevap1);
                     $cevaplar[] = $cevap1;
                 }
             }
@@ -211,10 +201,12 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $id1, $cevap1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cevap1 = stripslashes($cevap1);
                 $cevap = $id1 . " " . $cevap1;
             }
             mysqli_stmt_close($stmt);
         }
+
         $this->logger->writeLine("getRandCevapOfSoruId returns: " . $cevap);
         return $cevap;
     }
@@ -258,6 +250,7 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $cumle1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cumle1 = stripslashes($cumle1);
                 $cumle = $cumle1;
             }
             mysqli_stmt_close($stmt);
@@ -275,6 +268,7 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $cumle1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cumle1 = stripslashes($cumle1);
                 $cumle = $cumle1;
             }
             mysqli_stmt_close($stmt);
@@ -292,6 +286,7 @@ class DatabaseManager
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $cumle1);
             if (mysqli_stmt_fetch($stmt)) {
+                $cumle1 = stripslashes($cumle1);
                 $cumle = $cumle1;
             }
             mysqli_stmt_close($stmt);
@@ -302,10 +297,7 @@ class DatabaseManager
     function prepareQuery($string)
     {
         $this->logger->writeLine("prepareQuery gets: " . $string);
-        if (get_magic_quotes_gpc()) {  // prevents duplicate backslashes
-            $string = stripslashes($string);
-        }
-        $string = mysqli_real_escape_string($this->connection, $string);
+        $string = stripslashes($string);
         $string = mb_strtolower($string, "UTF-8");
         $this->logger->writeLine("prepareQuery returns: " . $string);
         return $string;
