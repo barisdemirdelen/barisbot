@@ -174,7 +174,7 @@ class DatabaseManager
         $kelime = $this->prepareQuery($kelime);
         $this->logger->writeLine("getCevaplarOfKelime gets: " . $kelime);
         $cevaplar = array();
-        $stmt = mysqli_prepare($this->connection, "SELECT cevapid FROM verildi WHERE soruid IN (SELECT id FROM cumleler WHERE cumle LIKE '%" . $kelime . "%')");
+        $stmt = mysqli_prepare($this->connection, "SELECT cevapid FROM verildi WHERE soruid IN (SELECT id FROM cumleler WHERE cumle= '" . $kelime . "' OR cumle LIKE '% " . $kelime . " %'  OR cumle LIKE '" . $kelime . " %'  OR cumle LIKE '% " . $kelime . "')");
         if ($stmt) {
             mysqli_stmt_execute($stmt);
             mysqli_stmt_bind_result($stmt, $cevap1);

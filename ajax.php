@@ -66,7 +66,7 @@ if (!$found) {
                     $maxCevaps = array();
                 }
             }
-            if ($count >= $maxCount || ($maxCount-$count ==1 && rand(0, 5) == 5)) {
+            if ($count >= $maxCount || (rand(0, 5) == 5)) {
                 $maxCevaps[] = $cevap;
                 if ($count > $maxCount) {
                     $maxCount = $count;

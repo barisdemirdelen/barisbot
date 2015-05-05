@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f49e3dc4-ebf2-4c47-b2fb-8dceb7728ede" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseManager.php" afterPath="$PROJECT_DIR$/DatabaseManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax.js" afterPath="$PROJECT_DIR$/ajax.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax.php" afterPath="$PROJECT_DIR$/ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.php" afterPath="$PROJECT_DIR$/debug.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eval.php" afterPath="$PROJECT_DIR$/eval.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="barisbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,50 +41,54 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ajax.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.538462">
-              <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.47332186">
+              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseManager.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabaseManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64888126">
-              <caret line="189" column="25" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
+            <state vertical-scroll-proportion="16.346153">
+              <caret line="173" column="47" selection-start-line="173" selection-start-column="47" selection-end-line="173" selection-end-column="47" />
               <folding>
-                <marker date="1430758427543" expanded="true" signature="542:576" placeholder="INSERT INTO ..." />
-                <marker date="1430758427543" expanded="true" signature="1034:1067" placeholder="INSERT INTO ..." />
-                <marker date="1430758427543" expanded="true" signature="1481:1518" placeholder="SELECT id FR..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="1971:2008" placeholder="SELECT cumle..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="2666:2732" placeholder="SELECT COUNT..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="3225:3259" placeholder="SELECT id FR..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="3787:3827" placeholder="SELECT cumle..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="4332:4385" placeholder="SELECT id,cu..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="4997:5164" placeholder="SELECT cumle..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="5085:5138" placeholder="SELECT sorui..verildi..." />
-                <marker date="1430758427543" expanded="true" signature="5858:5964" placeholder="SELECT cevap..verildi..." />
-                <marker date="1430758427543" expanded="true" signature="5903:5963" placeholder="SELECT id FR..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="6669:6796" placeholder="SELECT id,cu..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="6726:6770" placeholder="SELECT cevap..verildi..." />
-                <marker date="1430758427543" expanded="true" signature="7424:7465" placeholder="SELECT sorui..verildi..." />
-                <marker date="1430758427543" expanded="true" signature="7927:7956" placeholder="SELECT COUNT..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="8352:8403" placeholder="SELECT cumle..cumleler..." />
-                <marker date="1430758427543" expanded="true" signature="8861:9030" placeholder="SELECT cumle..soruid..." />
-                <marker date="1430758427543" expanded="true" signature="8902:8953" placeholder="SELECT sorui..verildi..." />
-                <marker date="1430758427543" expanded="true" signature="9489:9661" placeholder="SELECT cumle..cevapid..." />
-                <marker date="1430758427543" expanded="true" signature="9530:9582" placeholder="SELECT cevap..verildi..." />
+                <marker date="1430837377362" expanded="true" signature="542:576" placeholder="INSERT INTO ..." />
+                <marker date="1430837377362" expanded="true" signature="1034:1067" placeholder="INSERT INTO ..." />
+                <marker date="1430837377362" expanded="true" signature="1481:1518" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="1971:2008" placeholder="SELECT cumle..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="2666:2732" placeholder="SELECT COUNT..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="3225:3259" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="3787:3827" placeholder="SELECT cumle..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="4332:4385" placeholder="SELECT id,cu..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="4997:5164" placeholder="SELECT cumle..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="5085:5138" placeholder="SELECT sorui..verildi..." />
+                <marker date="1430837377362" expanded="true" signature="5858:6064" placeholder="SELECT cevap..verildi..." />
+                <marker date="1430837377362" expanded="true" signature="5903:5939" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="5903:5940" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="5903:5993" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="5903:6028" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="5903:6063" placeholder="SELECT id FR..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="6769:6896" placeholder="SELECT id,cu..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="6826:6870" placeholder="SELECT cevap..verildi..." />
+                <marker date="1430837377362" expanded="true" signature="7524:7565" placeholder="SELECT sorui..verildi..." />
+                <marker date="1430837377362" expanded="true" signature="8027:8056" placeholder="SELECT COUNT..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="8452:8503" placeholder="SELECT cumle..cumleler..." />
+                <marker date="1430837377362" expanded="true" signature="8961:9130" placeholder="SELECT cumle..soruid..." />
+                <marker date="1430837377362" expanded="true" signature="9002:9053" placeholder="SELECT sorui..verildi..." />
+                <marker date="1430837377362" expanded="true" signature="9589:9761" placeholder="SELECT cumle..cevapid..." />
+                <marker date="1430837377362" expanded="true" signature="9630:9682" placeholder="SELECT cevap..verildi..." />
               </folding>
             </state>
           </provider>
@@ -104,8 +107,8 @@
       <file leaf-file-name="eval.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eval.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.423077">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -114,7 +117,7 @@
       <file leaf-file-name="debug.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debug.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.384615">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
@@ -143,13 +146,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/eval.php" />
         <option value="$PROJECT_DIR$/lang.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/ajax.php" />
         <option value="$PROJECT_DIR$/debug.php" />
         <option value="$PROJECT_DIR$/ajax.js" />
         <option value="$PROJECT_DIR$/DatabaseManager.php" />
+        <option value="$PROJECT_DIR$/eval.php" />
+        <option value="$PROJECT_DIR$/ajax.php" />
       </list>
     </option>
   </component>
@@ -193,8 +196,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,6 +216,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -529,7 +532,8 @@
       <workItem from="1430170446384" duration="3254000" />
       <workItem from="1430238831114" duration="42000" />
       <workItem from="1430323132090" duration="1900000" />
-      <workItem from="1430755043804" duration="3614000" />
+      <workItem from="1430755043804" duration="3824000" />
+      <workItem from="1430837032331" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="amazing css">
       <created>1430158565699</created>
@@ -553,7 +557,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13621000" />
+    <option name="totallyTimeSpent" value="14484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -562,12 +566,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -582,6 +585,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -623,6 +627,88 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1430837377362" expanded="true" signature="542:576" placeholder="INSERT INTO ..." />
+            <marker date="1430837377362" expanded="true" signature="1034:1067" placeholder="INSERT INTO ..." />
+            <marker date="1430837377362" expanded="true" signature="1481:1518" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="1971:2008" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="2666:2732" placeholder="SELECT COUNT..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="3225:3259" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="3787:3827" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="4332:4385" placeholder="SELECT id,cu..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="4997:5164" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5085:5138" placeholder="SELECT sorui..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="5858:6064" placeholder="SELECT cevap..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="5903:5939" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:5940" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:5993" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:6028" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:6063" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="6769:6896" placeholder="SELECT id,cu..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="6826:6870" placeholder="SELECT cevap..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="7524:7565" placeholder="SELECT sorui..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="8027:8056" placeholder="SELECT COUNT..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="8452:8503" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="8961:9130" placeholder="SELECT cumle..soruid..." />
+            <marker date="1430837377362" expanded="true" signature="9002:9053" placeholder="SELECT sorui..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="9589:9761" placeholder="SELECT cumle..cevapid..." />
+            <marker date="1430837377362" expanded="true" signature="9630:9682" placeholder="SELECT cevap..verildi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -739,13 +825,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1376936">
           <caret line="947" column="3" selection-start-line="947" selection-start-column="1" selection-end-line="947" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
           <folding />
         </state>
@@ -759,17 +844,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eval.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.423077">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/debug.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.384615">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
@@ -779,14 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34767643">
           <caret line="265" column="9" selection-start-line="265" selection-start-column="9" selection-end-line="265" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.538462">
-          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -801,31 +870,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64888126">
-          <caret line="189" column="25" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
+        <state vertical-scroll-proportion="16.346153">
+          <caret line="173" column="47" selection-start-line="173" selection-start-column="47" selection-end-line="173" selection-end-column="47" />
           <folding>
-            <marker date="1430758427543" expanded="true" signature="542:576" placeholder="INSERT INTO ..." />
-            <marker date="1430758427543" expanded="true" signature="1034:1067" placeholder="INSERT INTO ..." />
-            <marker date="1430758427543" expanded="true" signature="1481:1518" placeholder="SELECT id FR..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="1971:2008" placeholder="SELECT cumle..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="2666:2732" placeholder="SELECT COUNT..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="3225:3259" placeholder="SELECT id FR..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="3787:3827" placeholder="SELECT cumle..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="4332:4385" placeholder="SELECT id,cu..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="4997:5164" placeholder="SELECT cumle..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="5085:5138" placeholder="SELECT sorui..verildi..." />
-            <marker date="1430758427543" expanded="true" signature="5858:5964" placeholder="SELECT cevap..verildi..." />
-            <marker date="1430758427543" expanded="true" signature="5903:5963" placeholder="SELECT id FR..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="6669:6796" placeholder="SELECT id,cu..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="6726:6770" placeholder="SELECT cevap..verildi..." />
-            <marker date="1430758427543" expanded="true" signature="7424:7465" placeholder="SELECT sorui..verildi..." />
-            <marker date="1430758427543" expanded="true" signature="7927:7956" placeholder="SELECT COUNT..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="8352:8403" placeholder="SELECT cumle..cumleler..." />
-            <marker date="1430758427543" expanded="true" signature="8861:9030" placeholder="SELECT cumle..soruid..." />
-            <marker date="1430758427543" expanded="true" signature="8902:8953" placeholder="SELECT sorui..verildi..." />
-            <marker date="1430758427543" expanded="true" signature="9489:9661" placeholder="SELECT cumle..cevapid..." />
-            <marker date="1430758427543" expanded="true" signature="9530:9582" placeholder="SELECT cevap..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="542:576" placeholder="INSERT INTO ..." />
+            <marker date="1430837377362" expanded="true" signature="1034:1067" placeholder="INSERT INTO ..." />
+            <marker date="1430837377362" expanded="true" signature="1481:1518" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="1971:2008" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="2666:2732" placeholder="SELECT COUNT..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="3225:3259" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="3787:3827" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="4332:4385" placeholder="SELECT id,cu..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="4997:5164" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5085:5138" placeholder="SELECT sorui..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="5858:6064" placeholder="SELECT cevap..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="5903:5939" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:5940" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:5993" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:6028" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="5903:6063" placeholder="SELECT id FR..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="6769:6896" placeholder="SELECT id,cu..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="6826:6870" placeholder="SELECT cevap..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="7524:7565" placeholder="SELECT sorui..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="8027:8056" placeholder="SELECT COUNT..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="8452:8503" placeholder="SELECT cumle..cumleler..." />
+            <marker date="1430837377362" expanded="true" signature="8961:9130" placeholder="SELECT cumle..soruid..." />
+            <marker date="1430837377362" expanded="true" signature="9002:9053" placeholder="SELECT sorui..verildi..." />
+            <marker date="1430837377362" expanded="true" signature="9589:9761" placeholder="SELECT cumle..cevapid..." />
+            <marker date="1430837377362" expanded="true" signature="9630:9682" placeholder="SELECT cevap..verildi..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47332186">
+          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
