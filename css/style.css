@@ -1,6 +1,7 @@
 
 input {
     width: 100%;
+    max-width:100%
     font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
     font-size: 30px;
     font-style: normal;
