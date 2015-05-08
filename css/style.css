@@ -1,31 +1,30 @@
+body {
+    background: url("confectionary.png") repeat;
+}
 
 input {
     width: 100%;
     max-width:100%
     font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-    font-size: 30px;
+    font-size: medium;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 .messages {
     width:100%;
-    max-width: 1024px;
-    margin: 20px auto;
+    max-width:1080px;
+    margin: 3px auto;
     font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-    font-size: 20px;
+    font-size: medium;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 .leftBubble, .rightBubble {
-    margin-top: 10px;
-    padding: 3px 5px 3px 5px;
-    width: 80%;
+    margin-top: 1%;
+    padding: 0 1% 0 1%;
+    max-width: 80%;
     clear: both;
 }
 

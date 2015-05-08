@@ -1,1 +1,50 @@
-sent = getLanguage()=="tr_TR" ? 1 : 2126;var xmlHttp = createXmlHttpRequestObject();function createXmlHttpRequestObject() {    var xmlHttp;    if (window.XMLHttpRequest) {        try {            xmlHttp = new XMLHttpRequest();        } catch (e) {            xmlHttp = false;        }    } else {        try {            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");        } catch (e) {            xmlHttp = false;        }    }    if (!xmlHttp) {        alert("Error creating the XMLHttpRequest object.");        return null;    } else {        return xmlHttp;    }}function process() {    var msg = document.getElementById("message").value;    document.getElementById("message").value = "";    var message;    if (msg != "" && msg != null) {        document.getElementById("divMessage").innerHTML = "<div class='rightBubble'><p>" + msg + "</p></div>" + document.getElementById("divMessage").innerHTML;        if (xmlHttp.readyState == 4 || xmlHttp.readyState == 0) {            message = encodeURIComponent(msg);            xmlHttp.open("GET", "ajax.php?sent=" + sent + "&message=" + message, true);            xmlHttp.onreadystatechange = function () {                var response;                var received;                if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {                    response = xmlHttp.responseText;                    received = response.substring(response.indexOf(" ") + 1);                    document.getElementById("divMessage").innerHTML = "<div class='leftBubble'><p>" + received + "</p></div>" + document.getElementById("divMessage").innerHTML;                }            };            xmlHttp.send();        } else {            setTimeout('process()', 1000);        }    }}jQuery(document).ready(function () {    fillText();    setTimeout(function(){ jQuery("#title").fadeOut( "slow" ); }, 6000);});function fillText() {    var language = getLanguage();    if(language=="tr_TR") {        document.getElementById("title").innerHTML = "<p>Merhaba, ben Bar??. E?er �evirimi�iysem benimle bu kutucuktan konu?abilirsiniz. <b>?u an �evirimi�iyim.</b></p><br/>";        document.getElementById("initialText").innerHTML = "<p>Naber?</p>";    } else {        document.getElementById("title").innerHTML = "<p>Hello, I'm Peace. If I'm online you can talk to me from this window. <b>I am online now.</b></p><br/>";        document.getElementById("initialText").innerHTML = "<p>What's up?</p>";    }}function getLanguage() {    return window.navigator.userLanguage || window.navigator.language;}
+sent = getLanguage() == "tr_TR" ? 1 : 2126;
+
+function process() {
+
+    var input = $("#message");
+    var message =input.val();
+    input.val("");
+
+    if (message != "" && message != null) {
+        var divMessage = $("#divMessage");
+        divMessage.html("<div class='rightBubble'><p>" + message + "</p></div>" + divMessage.html());
+        $.ajax({
+            type: "GET",
+            url: "ajax.php",
+            data: {
+                sent: sent,
+                message: message
+            },
+            success: function (response) {
+                var received = response.substring(response.indexOf(" ") + 1);
+                divMessage.html("<div class='leftBubble'><p>" + received + "</p></div>" + divMessage.html());
+            }
+        });
+    }
+
+}
+
+jQuery(document).ready(function () {
+    fillText();
+    setTimeout(function () {
+        jQuery("#title").fadeOut("slow");
+    }, 6000);
+});
+
+
+function fillText() {
+    var language = getLanguage();
+    if (language == "tr_TR") {
+        $("#title").html("<p>Merhaba, ben Barış. Eğer çevirimiçiysem benimle bu kutucuktan konuşabilirsiniz. <b>Şu an çevirimiçiyim.</b></p><br/>");
+        $("#initialText").html("<p>Naber?</p>");
+    } else {
+        $("#title").html("<p>Hello, I'm Peace. If I'm online you can talk to me from this window. <b>I am online now.</b></p><br/>");
+        $("#initialText").html("<p>What's up?</p>");
+
+    }
+}
+
+function getLanguage() {
+    return window.navigator.userLanguage || window.navigator.language;
+}
